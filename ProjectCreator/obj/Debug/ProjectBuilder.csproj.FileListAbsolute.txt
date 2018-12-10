@@ -4,3 +4,9 @@ E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csprojAssemblyRef
 E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csproj.CoreCompileInputs.cache
 E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.dll
 E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.pdb
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\bin\Debug\ProjectBuilder.dll
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\bin\Debug\ProjectBuilder.pdb
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csprojAssemblyReference.cache
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csproj.CoreCompileInputs.cache
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.dll
+C:\Users\Tiger\Desktop\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.pdb

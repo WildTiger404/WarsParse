@@ -18,7 +18,7 @@ namespace FileManager
             File.WriteAllText(env + @"\Resource\Template\Template\Readme.md", model.Description);
 
 
-            var newSolutionPath = $@"{solutionDestinationPath}\{model.Solution}";
+            var newSolutionPath = $@"{solutionDestinationPath}\{model.Name}";
             Directory.CreateDirectory(newSolutionPath);
             return newSolutionPath;
         }
