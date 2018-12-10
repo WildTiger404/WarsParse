@@ -1,0 +1,10 @@
+E:\epam-lab\Test\Test\bin\Debug\Test.dll
+E:\epam-lab\Test\Test\bin\Debug\Test.pdb
+E:\epam-lab\Test\Test\bin\Debug\nunit.framework.dll
+E:\epam-lab\Test\Test\bin\Debug\nunit.framework.pdb
+E:\epam-lab\Test\Test\bin\Debug\nunit.framework.xml
+E:\epam-lab\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
+E:\epam-lab\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\epam-lab\Test\Test\obj\Debug\Test.csproj.CopyComplete
+E:\epam-lab\Test\Test\obj\Debug\Test.dll
+E:\epam-lab\Test\Test\obj\Debug\Test.pdb

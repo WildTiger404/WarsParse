@@ -1,0 +1,6 @@
+E:\Projects\WarsParser\ProjectCreator\bin\Debug\ProjectBuilder.dll
+E:\Projects\WarsParser\ProjectCreator\bin\Debug\ProjectBuilder.pdb
+E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csprojAssemblyReference.cache
+E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.csproj.CoreCompileInputs.cache
+E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.dll
+E:\Projects\WarsParser\ProjectCreator\obj\Debug\ProjectBuilder.pdb
