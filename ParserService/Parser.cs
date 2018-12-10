@@ -58,9 +58,11 @@ namespace ParserService
             element.Click();
             element = _browser.FindElementByXPath("//*[@id=\"fixture\"]/div[1]");
             var lines = element.FindElements(By.ClassName("CodeMirror-line"));
+            Thread.Sleep(1000);
+            var result = string.Join(string.Empty, lines.Select(i => i.Text + "\n"));
             element = _browser.FindElementByXPath("//*[@id=\"fixture\"]/div[2]/ul/li[3]");
             element.Click();
-            return string.Join("", lines.Select(i => i.Text + "\n"));
+            return result;
         }
 
         private string GetFirstSolution()
