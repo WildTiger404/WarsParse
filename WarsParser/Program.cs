@@ -12,8 +12,8 @@ using DependencyResolver;
 using FileManager;
 using Microsoft.Win32.SafeHandles;
 using SimpleInjector;
-using ProjectBuilder;
 using System.Configuration;
+using ProjectBuilder;
 
 namespace WarsParser
 {
@@ -25,12 +25,8 @@ namespace WarsParser
             var container = new Container();
             Resolver.Resolve(container);
             var service = container.GetInstance<IParserService>();
-            var fileManager = container.GetInstance<IFileManager>();
-
-
-
             service.Authorization();
-            var task = service.GetTask("https://www.codewars.com/kata/simple-fun-number-74-growing-plant");
+            var task = service.GetTask("https://www.codewars.com/kata/vowel-count");
             Console.WriteLine(task.Name);
             Console.WriteLine(task.PrivateTest);
             Console.WriteLine("------------------------------------------");
@@ -46,9 +42,17 @@ namespace WarsParser
             Console.WriteLine("------------------------------------------");
             Console.WriteLine(task.Solution);
 
-            fileManager.UpdateResourceFile(task);
-            fileManager.CopyFilesRecursively(new DirectoryInfo(Environment.CurrentDirectory + ConfigurationManager.AppSettings["source"]),new DirectoryInfo(@"Resource\Test"));
+            var fileManager = container.GetInstance<IFileManager>();
 
+            var path = fileManager.GetPathToNewSolution(task, ConfigurationManager.AppSettings["solutionsPath"]);
+
+            fileManager.CopyFilesRecursively(new DirectoryInfo(Environment.CurrentDirectory + @"\Resource\Template"),new DirectoryInfo(path));
+
+            //var builder = container.GetInstance<IBuildService>();
+            //var flag = builder.Build(
+            //    @"E:\Projects\git\labs\padawans-task\Basics\Alghoritms\TheLargestNumberFromDigits\TheLargestNumberFromDigits.sln",
+            //    @"E:\Projects\git\labs\padawans-task\Basics\Alghoritms\TheLargestNumberFromDigits\TheLargestNumberFromDigits\bin\Debug");
+            //Console.WriteLine(flag);
             Console.ReadLine();
         }
     }

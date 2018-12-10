@@ -5,7 +5,7 @@ namespace FileManager
 {
     public interface IFileManager
     {
-        void UpdateResourceFile(WarsTask model);
+        string GetPathToNewSolution(WarsTask model, string solutionDestinationPath);
         void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target);
     }
 }
