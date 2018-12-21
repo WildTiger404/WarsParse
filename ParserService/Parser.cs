@@ -53,13 +53,17 @@ namespace ParserService
                 element.Click();
             }
 
-            
+            //Click fullScreen Button
             element = _browser.FindElementByXPath("//*[@id=\"fixture\"]/div[2]/ul/li[2]");
             element.Click();
+
+            //Find Code
             element = _browser.FindElementByXPath("//*[@id=\"fixture\"]/div[1]");
             var lines = element.FindElements(By.ClassName("CodeMirror-line"));
             Thread.Sleep(1000);
             var result = string.Join(string.Empty, lines.Select(i => i.Text + "\n"));
+
+            //click window button
             element = _browser.FindElementByXPath("//*[@id=\"fixture\"]/div[2]/ul/li[3]");
             element.Click();
             return result;
@@ -89,6 +93,7 @@ namespace ParserService
             {
             }
 
+            //Find First solution from list
             element = _browser.FindElementById("solutions_list");
             var code = element.FindElement(By.CssSelector("Code"));
             return code.Text;
